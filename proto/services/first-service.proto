@@ -1,0 +1,8 @@
+syntax = "proto3";
+import "messages/bar.proto";
+
+package service;
+
+service FirstService {
+  rpc BarMessage(common.Bar) returns(common.Bar);
+}
